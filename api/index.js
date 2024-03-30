@@ -1,12 +1,11 @@
 const express = require("express");
 const axios = require("axios");
-require("dotenv").config();
 const cors = require("cors");
 
 const app = express();
 app.use(cors());
 
-const PORT = process.env.PORT || 8000;
+const PORT = 8000;
 
 app.get("/api/matches", async (req, res) => {
   try {
