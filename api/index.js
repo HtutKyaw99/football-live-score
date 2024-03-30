@@ -7,7 +7,7 @@ app.use(cors());
 
 const PORT = 8000;
 
-app.get("/api/matches", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const response = await axios.get(
       "http://api.football-data.org/v4/matches",
