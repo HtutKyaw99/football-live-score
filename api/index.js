@@ -14,7 +14,7 @@ app.get("/api/matches", async (req, res) => {
       "http://api.football-data.org/v4/matches",
       {
         headers: {
-          "X-Auth-Token": "3ac24f3108ee4cc2878b08e44ec65ca6",
+          "X-Auth-Token": process.env.API_KEY,
         },
       }
     );
